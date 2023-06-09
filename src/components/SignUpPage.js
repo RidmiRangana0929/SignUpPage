@@ -15,7 +15,8 @@ const SignUpPage = () => {
   return (
     <div className='container'>
 
-      <div className='app-wrapper'>
+      <div className='app-wrapper1'>
+      <div className='app-wrapper2'>
         <div>
           <h2 className='title'>Student Login</h2>
         </div>
@@ -51,6 +52,12 @@ const SignUpPage = () => {
 
         </form>
       </div>
+      <div className='app-wrapper3'></div>
+      <div className='app-wrapper4'></div>
+      </div>
+      
+
+      
 
     </div>
   );

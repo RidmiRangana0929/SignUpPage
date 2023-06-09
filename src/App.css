@@ -5,21 +5,63 @@
 
 .container {
     background: linear-gradient(135deg, #850c62, #f80759);
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.app-wrapper1 {
+    background-color: #000000bc;
+    width: 80vw;
+    height: 80vh;
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    align-content: left;  
+    border-radius: 20px;
+}
 
-.app-wrapper {
+.app-wrapper2 {
     background-color: #fff;
-    min-width: 350px;
-    min-height: 650px;
+    width: 50%;
+    height: 100%;
     padding: 30px;
     box-sizing: border-box;
-    border-radius: 5px;
+    position: absolute;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
+.app-wrapper3 {
+    background-image: url("./components/images/logan-isbell-F5b7_OD4IMA-unsplash.jpg");
+    background-size: cover;
+    background-position: 0%;
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.app-wrapper4 {
+    background: linear-gradient(135deg, #850c62, #f80759);
+    opacity: 0.3;
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
 
 .input {
     height: 32px;
