@@ -61,3 +61,11 @@
     cursor: pointer;
     transition: all 0.1s;
   }
+
+  .passward{
+    margin-bottom: 40px;
+  }
+
+  button:active{
+    transition: translateY(2px);
+  }
