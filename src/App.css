@@ -1,27 +1,27 @@
-*{
-    margin:0;
-    padding:0;
-  }
-  
-  .container{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
     background: linear-gradient(135deg, #850c62, #f80759);
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .app-wrapper{
+.app-wrapper {
     background-color: #fff;
     min-width: 350px;
     min-height: 650px;
     padding: 30px;
     box-sizing: border-box;
     border-radius: 5px;
-  }
+}
 
-  .input{
+.input {
     height: 32px;
     font-size: 20px;
     outline: none;
@@ -31,10 +31,16 @@
     border-right-style: none;
     border-bottom-style: 2px solid #000000;
     margin-bottom: 10px;
-  }
+}
 
-  .title{
+.title {
     color: #f80759;
     text-align: center;
     margin: 80px 0px 40px 0px;
-  }
+}
+
+.name .email .passward {
+    margin: 20px;
+    color: #969292;
+    font-size: 16px;
+}
