@@ -1,7 +1,13 @@
 import { hasFormSubmit } from '@testing-library/user-event/dist/utils';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const LoginPage = () => {
+
+  const [values,setValues] = useState({
+    fullname : "",
+    email : "",
+    password : ""
+  });
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -19,17 +25,17 @@ const LoginPage = () => {
 
           <div className='name'>
             <label className='lable'>Full Name</label>
-            <input className='input' type='text'/>
+            <input className='input' type='text' name='fullname'/>
           </div>
 
           <div className='email'>
             <label className='lable'>Email</label>
-            <input className='input' type='email'/>
+            <input className='input' type='email' name='email'/>
           </div>
 
           <div className='password'>
             <label className='lable'>Password</label>
-            <input className='input' type='password'/>
+            <input className='input' type='password' name='password'/>
           </div>
 
           <div>
