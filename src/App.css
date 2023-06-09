@@ -4,7 +4,7 @@
 }
 
 .container {
-    background: linear-gradient(135deg, #850c62, #f80759);
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -48,7 +48,7 @@
     border-bottom-right-radius: 20px;
 }
 .app-wrapper4 {
-    background: linear-gradient(135deg, #850c62, #f80759);
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
     opacity: 0.3;
     width: 50%;
     height: 100%;
@@ -76,7 +76,7 @@
 }
 
 .title {
-    color: #f80759;
+    color: #6e45e2;
     text-align: center;
     margin: 80px 0px 40px 0px;
 }
@@ -94,7 +94,7 @@
     border-radius: 25px;
     color: #ffffff;
     padding: 10px 60px;
-    background: linear-gradient(to right,#ab1dcf, #f80759);
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
     box-shadow: rgb(0, 0, 0, 0.3) 0px 19px 38px,
     rgb(0, 0, 0, 0.22) 0px 15px 12px;
     margin: auto;
