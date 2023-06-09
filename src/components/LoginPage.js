@@ -1,6 +1,12 @@
+import { hasFormSubmit } from '@testing-library/user-event/dist/utils';
 import React from 'react'
 
 const LoginPage = () => {
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <div className='container'>
 
@@ -27,7 +33,7 @@ const LoginPage = () => {
           </div>
 
           <div>
-            <button className='submit'>Sign Up</button>
+            <button className='submit' onClick={handleFormSubmit}>Sign Up</button>
           </div>
 
         </form>
