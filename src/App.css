@@ -20,3 +20,15 @@
     box-sizing: border-box;
     border-radius: 5px;
   }
+
+  .input{
+    height: 32px;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: 2px solid #000000;
+    margin-bottom: 10px;
+  }
