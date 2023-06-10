@@ -22,7 +22,7 @@ const Validation = (fullName,grade,email,username,password) => {
     }
     if (!password) {
         errors.password = "Password Reqired."
-    }else if (username.length <5) {
+    }else if (password.length <5) {
         errors.password = "Password must be has more than five charactors. "
     }
 

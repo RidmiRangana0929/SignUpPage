@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react'
+import Validation from './Validation';
 
 const SignUpPage = () => {
 
@@ -9,8 +10,11 @@ const SignUpPage = () => {
   const [username,setUsername] = useState("");
   const [password,setPassword] = useState("");
 
+  const [errors, setErrors] = useState({});
+
   const handleFormSubmit = (e) => {
     console.log("Full name : "+fullName+" , "+"Grade : "+grade+" , "+"Email : "+email+" , "+"Username : "+username+" , "+"Password : "+password);
+    setErrors(Validation(fullName,grade,email,username,password))
     e.preventDefault();
   }
 
@@ -32,6 +36,7 @@ const SignUpPage = () => {
             type='text' 
             name='fullname' 
             onChange={ (e) => {setFullName(e.target.value)}}/>
+            {errors.fullName && <p className='error'>{errors.fullName}</p>}
           </div>
 
           <div className='grade'>
@@ -41,6 +46,7 @@ const SignUpPage = () => {
             type='grade' 
             name='grade' 
             onChange={ (e) => {setGrade(e.target.value)}}/>
+            {errors.grade && <p className='error'>{errors.grade}</p>}
           </div>
 
           <div className='email'>
@@ -49,6 +55,7 @@ const SignUpPage = () => {
             id='s_email' 
             type='email' name='email' 
             onChange={ (e) => {setEmail(e.target.value)}}/>
+            {errors.email && <p className='error'>{errors.email}</p>}
           </div>
 
           <div className='username'>
@@ -58,6 +65,7 @@ const SignUpPage = () => {
             type='username' 
             name='username' 
             onChange={ (e) => {setUsername(e.target.value)}}/>
+            {errors.username && <p className='error'>{errors.username}</p>}
           </div>
 
           <div className='password'>
@@ -67,6 +75,7 @@ const SignUpPage = () => {
             type='password' 
             name='password' 
             onChange={ (e) => {setPassword(e.target.value)}}/>
+            {errors.password && <p className='error'>{errors.password}</p>}
           </div>
 
           <div>
