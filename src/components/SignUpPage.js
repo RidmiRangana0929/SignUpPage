@@ -20,7 +20,7 @@ const SignUpPage = () => {
       <div className='app-wrapper2'>
 
         <div>
-          <h2 className='title'>Student Login</h2>
+          <h2 className='title'>STUDENT SIGNUP</h2>
         </div>
 
         <form className='form-wrapper'>
